@@ -1,6 +1,19 @@
 import streamlit as st
 import requests
 
+google_analytics_code = """
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5K2YBFTZZT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-5K2YBFTZZT');
+    </script>"""
+st.components.v1.html(google_analytics_code, height=0)
+
 # URL base de la API de TheCocktailDB
 API_URL = "https://www.thecocktaildb.com/api/json/v1/1"
 
