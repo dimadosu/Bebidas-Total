@@ -12,7 +12,7 @@ google_analytics_code = """
 
             gtag('config', 'G-5K2YBFTZZT');
     </script>"""
-st.components.v1.html(google_analytics_code, height=0)
+st.components.html(google_analytics_code, height=0)
 
 # URL base de la API de TheCocktailDB
 API_URL = "https://www.thecocktaildb.com/api/json/v1/1"
